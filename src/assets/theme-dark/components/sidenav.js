@@ -30,7 +30,6 @@ const sidenav = {
       whiteSpace: "nowrap",
       border: "none",
     },
-
     paper: {
       width: pxToRem(250),
       backgroundColor: background.sidenav,

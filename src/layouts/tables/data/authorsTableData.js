@@ -59,8 +59,8 @@ export default function data() {
 
     rows: [
       {
-        author: <Author image={team2} name="John Michael" email="john@creative-tim.com" />,
-        function: <Job title="Manager" description="Organization" />,
+        author: <Author image={team2} name="John Michael" />,
+        function: <Job title="Police de la route" description="Lieutenant" />,
         status: (
           <MDBox ml={-1}>
             <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />
@@ -68,37 +68,37 @@ export default function data() {
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            23/04/18
+            Sfax, Sekkit ezzit
           </MDTypography>
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            Appeler
           </MDTypography>
         ),
       },
       {
-        author: <Author image={team3} name="Alexa Liras" email="alexa@creative-tim.com" />,
-        function: <Job title="Programator" description="Developer" />,
+        author: <Author image={team3} name="Alexa Liras" />,
+        function: <Job title="Police de la route" description="Brigdaier" />,
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="EN MISSION" color="dark" variant="gradient" size="sm" />
           </MDBox>
         ),
         employed: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            11/01/19
+            Tunis, Aouina
           </MDTypography>
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            Appeler
           </MDTypography>
         ),
       },
       {
-        author: <Author image={team4} name="Laurent Perrier" email="laurent@creative-tim.com" />,
-        function: <Job title="Executive" description="Projects" />,
+        author: <Author image={team4} name="Laurent Perrier" />,
+        function: <Job title="Police de la Circulation" description="Sous-lieutenant" />,
         status: (
           <MDBox ml={-1}>
             <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />
@@ -111,13 +111,13 @@ export default function data() {
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            Appeler
           </MDTypography>
         ),
       },
       {
-        author: <Author image={team3} name="Michael Levi" email="michael@creative-tim.com" />,
-        function: <Job title="Programator" description="Developer" />,
+        author: <Author image={team3} name="Michael Levi" />,
+        function: <Job title="Police de la route" description="Brigdaier" />,
         status: (
           <MDBox ml={-1}>
             <MDBadge badgeContent="online" color="success" variant="gradient" size="sm" />
@@ -130,16 +130,16 @@ export default function data() {
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            Appeler
           </MDTypography>
         ),
       },
       {
-        author: <Author image={team3} name="Richard Gran" email="richard@creative-tim.com" />,
-        function: <Job title="Manager" description="Executive" />,
+        author: <Author image={team3} name="Richard Gran"/>,
+        function: <Job title="Police de la route" description="Colonel" />,
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="EN MISSION" color="dark" variant="gradient" size="sm" />
           </MDBox>
         ),
         employed: (
@@ -149,16 +149,16 @@ export default function data() {
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            Appeler
           </MDTypography>
         ),
       },
       {
-        author: <Author image={team4} name="Miriam Eric" email="miriam@creative-tim.com" />,
-        function: <Job title="Programator" description="Developer" />,
+        author: <Author image={team4} name="Miriam Eric" />,
+        function: <Job title="Police de la route" description="Brigdaier" />,
         status: (
           <MDBox ml={-1}>
-            <MDBadge badgeContent="offline" color="dark" variant="gradient" size="sm" />
+            <MDBadge badgeContent="EN MISSION" color="dark" variant="gradient" size="sm" />
           </MDBox>
         ),
         employed: (
@@ -168,7 +168,7 @@ export default function data() {
         ),
         action: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
+            Appeler
           </MDTypography>
         ),
       },
