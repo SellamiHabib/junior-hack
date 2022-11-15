@@ -60,31 +60,6 @@ function PaymentMethod() {
                   `${borderWidth[1]} solid ${borderColor}`,
               }}
             >
-              <MDBox component="img" src={masterCardLogo} alt="master card" width="10%" mr={2} />
-              <MDTypography variant="h6" fontWeight="medium">
-                ****&nbsp;&nbsp;****&nbsp;&nbsp;****&nbsp;&nbsp;7852
-              </MDTypography>
-              <MDBox ml="auto" lineHeight={0} color={darkMode ? "white" : "dark"}>
-                <Tooltip title="Edit Card" placement="top">
-                  <Icon sx={{ cursor: "pointer" }} fontSize="small">
-                    edit
-                  </Icon>
-                </Tooltip>
-              </MDBox>
-            </MDBox>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <MDBox
-              borderRadius="lg"
-              display="flex"
-              justifyContent="space-between"
-              alignItems="center"
-              p={3}
-              sx={{
-                border: ({ borders: { borderWidth, borderColor } }) =>
-                  `${borderWidth[1]} solid ${borderColor}`,
-              }}
-            >
               <MDBox component="img" src={visaLogo} alt="master card" width="10%" mr={2} />
               <MDTypography variant="h6" fontWeight="medium">
                 ****&nbsp;&nbsp;****&nbsp;&nbsp;****&nbsp;&nbsp;5248

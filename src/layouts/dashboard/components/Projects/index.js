@@ -31,6 +31,8 @@ import DataTable from "examples/Tables/DataTable";
 // Data
 import data from "layouts/dashboard/components/Projects/data";
 import Grid from "@mui/material/Grid";
+import Tooltip from "@mui/material/Tooltip";
+import TrafficIcon from '@mui/icons-material/Traffic';
 
 function Projects() {
     const {columns, rows} = data();
@@ -70,6 +72,8 @@ function Projects() {
                 </MDBox>
 
             </MDBox>
+
+
             <MDBox>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={6} lg={4}> t</Grid>
@@ -77,6 +81,7 @@ function Projects() {
                 </Grid>
             </MDBox>
         </Card>
+
     );
 }
 
