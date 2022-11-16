@@ -21,6 +21,7 @@ Coded by www.creative-tim.com
 import rgba from "assets/theme-dark/functions/rgba";
 import pxToRem from "assets/theme-dark/functions/pxToRem";
 
+// eslint-disable-next-line default-param-last
 function boxShadow(offset = [], radius = [], color, opacity, inset = "") {
   const [x, y] = offset;
   const [blur, spread] = radius;

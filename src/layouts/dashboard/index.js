@@ -15,7 +15,7 @@
 
 // @mui material components
 import Grid from "@mui/material/Grid";
-
+import VerticalBarChart from "examples/Charts/BarCharts/VerticalBarChart";
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
 import TrafficIcon from "@mui/icons-material/Traffic";
@@ -51,9 +51,9 @@ function Dashboard() {
     const {columns, rows} = authorsTableData();
     return (
         <DashboardLayout>
-            <MDBox py={3} >
+            <MDBox py={3}>
                 <MDBox component="img" src={logo} width="15%" mb={6} mt={0} ml={70} borderRadius="30%"/>
-                <Grid container spacing={6} >
+                <Grid container spacing={6}>
                     <Grid item xs={12} md={6} lg={4}>
                         <MDBox mb={1.5}>
                             <ComplexStatisticsCard
@@ -103,12 +103,12 @@ function Dashboard() {
                         <Grid item xs={12} md={6} lg={8}>
                             <MDBox p={2}>
                                 <Card>
-                                    <MDBox  display="flex" justifyContent="space-between" m ={3}>
+                                    <MDBox display="flex" justifyContent="space-between" m={3}>
                                         <MDTypography variant="h6" gutterBottom>
                                             Feux Modifiés
                                         </MDTypography>
                                         <MDButton variant="gradient" color="dark" alignSelf="flex-start">
-                                            <Icon sx={{ fontWeight: "bold" }}>add</Icon>
+                                            <Icon sx={{fontWeight: "bold"}}>add</Icon>
                                             &nbsp;Modifier l'etat d'un feu
                                         </MDButton>
                                     </MDBox>
@@ -149,7 +149,7 @@ function Dashboard() {
                                                     </MDBox>
                                                 </MDBox>
                                             </Grid>
-                                            <Grid item xs={12} md={6} >
+                                            <Grid item xs={12} md={6}>
                                                 <MDBox
                                                     component="img"
                                                     src={image}
@@ -160,42 +160,42 @@ function Dashboard() {
                                                     position="relative"
                                                     zIndex={1}
                                                 />
-                                            </Grid>        <Grid item xs={12} md={6}>
-                                                <MDBox
-                                                    borderRadius="lg"
-                                                    display="flex"
-                                                    justifyContent="space-between"
-                                                    alignItems="center"
-                                                    p={3}
-                                                    sx={{
-                                                        border: ({borders: {borderWidth, borderColor}}) =>
-                                                            `${borderWidth[1]} solid ${borderColor}`,
-                                                    }}
-                                                >
-                                                    <MDBox width="10%" mr={2}>
-                                                        <TrafficIcon/>
-                                                    </MDBox>
-
-                                                    <MDTypography variant="h6" fontWeight="medium">
-                                                        56
-                                                    </MDTypography>
-                                                    <MDBox width="10%" color='red' ml={1}>
-                                                        <CircleIcon/>
-                                                    </MDBox>
-
-                                                    <MDTypography variant="button" fontWeight="medium">
-                                                        Restant : 87 sec
-                                                    </MDTypography>
-                                                    <MDBox ml="auto" lineHeight={0} color="dark">
-                                                        <Tooltip title="Edit Card" placement="top">
-                                                            <Icon sx={{cursor: "pointer"}} fontSize="small">
-                                                                edit
-                                                            </Icon>
-                                                        </Tooltip>
-                                                    </MDBox>
+                                            </Grid> <Grid item xs={12} md={6}>
+                                            <MDBox
+                                                borderRadius="lg"
+                                                display="flex"
+                                                justifyContent="space-between"
+                                                alignItems="center"
+                                                p={3}
+                                                sx={{
+                                                    border: ({borders: {borderWidth, borderColor}}) =>
+                                                        `${borderWidth[1]} solid ${borderColor}`,
+                                                }}
+                                            >
+                                                <MDBox width="10%" mr={2}>
+                                                    <TrafficIcon/>
                                                 </MDBox>
-                                            </Grid>
-                                            <Grid item xs={12} md={6} >
+
+                                                <MDTypography variant="h6" fontWeight="medium">
+                                                    56
+                                                </MDTypography>
+                                                <MDBox width="10%" color='red' ml={1}>
+                                                    <CircleIcon/>
+                                                </MDBox>
+
+                                                <MDTypography variant="button" fontWeight="medium">
+                                                    Restant : 87 sec
+                                                </MDTypography>
+                                                <MDBox ml="auto" lineHeight={0} color="dark">
+                                                    <Tooltip title="Edit Card" placement="top">
+                                                        <Icon sx={{cursor: "pointer"}} fontSize="small">
+                                                            edit
+                                                        </Icon>
+                                                    </Tooltip>
+                                                </MDBox>
+                                            </MDBox>
+                                        </Grid>
+                                            <Grid item xs={12} md={6}>
                                                 <MDBox
                                                     component="img"
                                                     src={image2}
@@ -216,22 +216,19 @@ function Dashboard() {
                         <Grid item xs={12} md={6} lg={4}>
                             <MDBox p={2}>
                                 <MDBox mb={3}>
-                                    <ReportsLineChart
-                                        color="dark"
-                                        title="completed tasks"
-                                        description="Last Campaign Performance"
-                                        date="just updated"
-                                        chart={tasks}
-                                    />
-                                </MDBox>
-                            </MDBox>   <MDBox p={2}>
-                                <MDBox mb={3}>
-                                    <ReportsLineChart
-                                        color="dark"
-                                        title="completed tasks"
-                                        description="Last Campaign Performance"
-                                        date="just updated"
-                                        chart={tasks}
+
+
+                                    <VerticalBarChart
+                                        icon={{color: "info", component: "leaderboard"}}
+                                        title="Les rues les plus occupés actuellement"
+                                        chart={{
+                                            labels: ["Route X", "CUN", "Lac 1", "Lac 2", "Bardo", "Ariana"],
+                                            datasets: [{
+                                                label: "delay time",
+                                                color: "dark",
+                                                data: [60, 50, 40, 35, 32, 30,]
+                                            }],
+                                        }}
                                     />
                                 </MDBox>
                             </MDBox>
@@ -241,7 +238,7 @@ function Dashboard() {
                 </MDBox>
 
             </MDBox>
-            
+
         </DashboardLayout>
     );
 }
