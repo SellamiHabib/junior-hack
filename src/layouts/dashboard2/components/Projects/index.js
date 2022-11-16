@@ -20,7 +20,7 @@ import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import bigPicture from 'assets/images/policeBigMap.jpg'
+
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
@@ -33,7 +33,6 @@ import data from "layouts/dashboard/components/Projects/data";
 import Grid from "@mui/material/Grid";
 import Tooltip from "@mui/material/Tooltip";
 import TrafficIcon from '@mui/icons-material/Traffic';
-import MDButton from "../../../../components/MDButton";
 
 function Projects() {
     const {columns, rows} = data();
@@ -65,22 +64,22 @@ function Projects() {
 
     return (
         <Card>
-            <MDBox  p={3}>
+            <MDBox display="flex" justifyContent="space-between" alignItems="center" p={3}>
                 <MDBox>
-                    <MDTypography variant="h6" gutterBottom p ="6">
-                        Cartes des feux
+                    <MDTypography variant="h6" gutterBottom>
+                        Cartes
                     </MDTypography>
-                </MDBox>
-                <MDBox display="flex" justifyContent="space-between" alignItems="flex-start">
-                    <MDBox component="img" src={bigPicture}/>
-                    <MDButton variant="gradient" color="dark" alignSelf="flex-start">
-                        <Icon sx={{ fontWeight: "bold" }}>add</Icon>
-                        &nbsp;Modifier l'etat d'un feu
-                    </MDButton>
                 </MDBox>
 
             </MDBox>
 
+
+            <MDBox>
+                <Grid container spacing={3}>
+                    <Grid item xs={12} md={6} lg={4}> t</Grid>
+                    <Grid item xs={12} md={6} lg={4}> t </Grid>
+                </Grid>
+            </MDBox>
         </Card>
 
     );
